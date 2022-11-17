@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&family=Josefin+Sans:ital,wght@0,100;0,500;1,100;1,500&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,400&display=swap');
+a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+body{
+   
+    background: linear-gradient(to bottom, #520202, rgb(0, 0, 0)) ;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    overflow-x:hidden;
+}
+
+#head1 {
+    display: inline;
+    padding: 15px;
+    letter-spacing: 0.2em;
+    border: 1px solid;
+    border-image: linear-gradient(20deg, #f92056 38%, #00deff 65%);
+    border-image-slice: 1;
+    border-radius: 5px;
+}
+
+#head {
+    background-position: center;
+    background-color: black;
+    text-align: left;
+    width: 100%;
+    height: 100%;
+    line-height: 100px;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-left: 5%;
+    padding-right: 5%;
+    position: sticky;
+    top: 0;
+    opacity: 0.88;
+    margin-bottom: 0px;
+}
+
+#nav {
+    list-style: none;
+    display: inline;
+    margin-top: -30px;
+    width: 60%; 
+}
+
+
+.nav1 li :hover {
+    color:#767676;
+    
+}
+
+#nav li {
+    display: inline;
+    padding: 0px 10px;
+    cursor: pointer;
+    font-size: 20px;
+} 
+
+
+.text {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    background-color: black;
+    padding: 40px;
+    max-width: 45%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 6px solid rgb(255, 255, 255);
+    border-radius: 6px ;
+}
+
+.img {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.glitch {
+    margin-top: 180px;
+    text-align: center;
+    font-size: 2.7rem;
+    display: block;
+
+    text-transform: uppercase;
+    text-shadow: 
+        0.05em 0 0 rgba(225, 0, 0, .75),
+        -0.025em -0.05em 0 rgba(0, 225, 0, .75),
+        0.025em 0.05em 0 rgba(0, 0, 225, .75);
+
+        animation: glitch 500ms infinite;
+}
+
+
+@keyframes glitch {
+    0% {text-shadow: 
+        0.05em 0 0 rgba(225, 0, 0, .75),
+        -0.05em -0.025em 0 rgba(0, 225, 0, .75),
+        -0.025em 0.05em 0 rgba(0, 0, 225, .75);
+    }
+    14% {text-shadow: 
+        0.05em 0 0 rgba(225, 0, 0, .75),
+        -0.05em -0.025em 0 rgba(0, 225, 0, .75),
+        -0.025em 0.05em 0 rgba(0, 0, 225, .75);
+    }
+    15% {text-shadow: 
+        0.05em -0.025em 0 rgba(225, 0, 0, .75),
+        0.025em 0.025em 0 rgba(0, 225, 0, .75),
+        -0.05em -0.05em 0 rgba(0, 0, 225, .75);
+    }
+    49% {text-shadow: 
+        0.05em -0.025em 0 rgba(225, 0, 0, .75),
+        0.025em 0.025em 0 rgba(0, 225, 0, .75),
+        -0.05em -0.05em 0 rgba(0, 0, 225, .75);
+    }
+    50% {text-shadow: 
+        0.025em 0.05em 0 rgba(225, 0, 0, .75),
+        0.05em 0 0 rgba(0, 225, 0, .75),
+        0 -0.05em 0 rgba(0, 0, 225, .75);
+    }
+    99% {text-shadow: 
+        0.025em 0.05em 0 rgba(225, 0, 0, .75),
+        0.05em 0 0 rgba(0, 225, 0, .75),
+        0 -0.05em 0 rgba(0, 0, 225, .75);
+    }
+    100% {text-shadow: 
+        -0.025em 0 0 rgba(225, 0, 0, .75),
+        -0.025em -0.025em 0 rgba(0, 225, 0, .75),
+        -0.025em -0.05em 0 rgba(0, 0, 225, .75);
+    }
+
+}
+
+
+#block-gallery {
+    flex-wrap: wrap;
+    padding-top: 40px;
+    text-align: center;
+
+}
+
+.gallery {
+    background-color:pink;
+    padding: 30px;
+    border-radius: 20px;
+    border: 5px solid #f92056;
+    box-shadow:  2px 1px 5px #999999;;
+    margin: 30px;
+    min-width: 250px;
+}
+
+.gallery:hover {
+    background-color: aquamarine;
+    transition: 0.35s;
+    width: 310px;
+}
+
+.gallery:not(:hover) {
+    transition: 0.35s;
+}
+
+.feedback {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid red;
+    max-width: 40%;
+    padding: 40px;
+    margin-bottom: 40px;
+}
+
+.ing {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: left;
+    padding-left: 50px;
+    color: wheat;
+
+}
+
+.video {
+    width: 200px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+.cook {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.cook1 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: rgb(243, 243, 121);
+}
+
+.text1 {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    background-color: rgb(209, 87, 87);
+    padding: 40px;
+    width: 50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid rgb(255, 0, 0);
+    border-radius: 6px ;
+
+    
+}
