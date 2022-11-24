@@ -15,6 +15,10 @@ hr {
     margin-bottom: 20px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body{
    
     background: linear-gradient(to bottom, #520202, rgb(0, 0, 0)) ;
